@@ -1,0 +1,30 @@
+@use '../typography' as t;
+
+.settings-spoiler {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  @include t.m14();
+  box-sizing: border-box;
+  //transition: .2s ease-in;
+  cursor: default;
+  border-radius: 12px;
+
+  &:hover {
+    background: #1C1F34;
+  }
+
+  &-active, &-active:hover {
+    margin-top: 8px;
+    background: var(--tertiary);
+  }
+
+  &-text {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+  }
+}

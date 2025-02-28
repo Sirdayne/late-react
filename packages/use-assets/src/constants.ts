@@ -1,0 +1,6 @@
+export const ASSETS_BASE_IMAGE_PATH = './assets/images/'
+export const ASSETS_BASE_BITMAP_FONT_PATH = './assets/bitmapfonts/'
+export const ASSETS_BASE_SPINE_PATH = './assets/spine/'
+export const ASSETS_BASE_SPRITESHEET_PATH = './assets/spritesheets/'
+export const ASSETS_BASE_L10N_PATH = './assets/l10n/'
+export const ASSETS_BASE_SOUNDS_PATH = './assets/sounds/'

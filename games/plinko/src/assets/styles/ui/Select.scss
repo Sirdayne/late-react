@@ -1,0 +1,124 @@
+@use '../typography' as t;
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.select {
+  position: relative;
+
+  select {
+    height: 48px;
+    border-radius: 12px;
+    border: 2px solid #282C45;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    color: #fff;
+    padding: 12px 44px 12px 12px;
+    box-sizing: border-box;
+    outline: none;
+    @include t.m14();
+
+    &:focus {
+      border-radius: 12px;
+      border: 2px solid var(--btn-initial);
+      background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    }
+
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  /* For IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+
+  option {
+    color: #1C1F34;
+    padding: 12px 44px 12px 12px;
+  }
+}
+
+.select {
+  position: relative;
+
+  &-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  &-header {
+    height: 48px;
+    border-radius: 12px;
+    border: 2px solid #282C45;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    color: #fff;
+    padding: 12px 44px 12px 12px;
+    box-sizing: border-box;
+    outline: none;
+    @include t.m14();
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      border: 2px var(--quaternary) solid;
+      background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+    }
+
+    &-active, &-active:hover {
+      border: 2px solid var(--btn-initial);
+      background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+    }
+
+    &-disabled, &-disabled:hover {
+      border: 2px var(--quinary) solid;
+      background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+      color: var(--tertiary);
+    }
+  }
+
+  &-list {
+    position: absolute;
+    width: 100%;
+    max-height: 160px;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 2px solid #6D62F6;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-y: auto;
+    z-index: 3;
+
+    &_bottom {
+      bottom: calc(100% - 10px);
+    }
+  }
+
+  &-item {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 8px;
+    @include t.m14();
+
+    &:hover {
+      background: #25273F;
+    }
+
+    &-active, &-active:hover {
+      background: var(--quaternary);
+    }
+  }
+}

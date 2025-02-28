@@ -1,0 +1,33 @@
+Plinko_Lightning_Top.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Lightning Right
+  rotate: true
+  xy: 0, 0
+  size: 172, 338
+  orig: 172, 338
+  offset: 0, 0
+  index: -1
+Lightning Right BG
+  rotate: true
+  xy: 338, 0
+  size: 172, 338
+  orig: 172, 338
+  offset: 0, 0
+  index: -1
+Lightning_1
+  rotate: true
+  xy: 676, 71
+  size: 101, 103
+  orig: 105, 108
+  offset: 0, 0
+  index: -1
+Vector
+  rotate: true
+  xy: 779, 125
+  size: 47, 44
+  orig: 52, 50
+  offset: 0, 5
+  index: -1

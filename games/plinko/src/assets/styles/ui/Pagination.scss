@@ -1,0 +1,78 @@
+@use '../typography' as t;
+
+.pagination {
+  @include t.m14();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover {
+      background: var(--tertiary);
+    }
+
+    &_disabled {
+      cursor: default;
+      background: rgba(0,0,0,0);
+
+      &:hover {
+        background: rgba(0,0,0,0);
+      }
+    }
+  }
+
+  &-item {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    height: 32px;
+    color: var(--settings);
+    @include t.m14();
+    background: rgba(0,0,0,0);
+    box-sizing: border-box;
+    transition: .2s linear;
+    outline: none;
+
+    &:hover {
+      background: var(--tertiary);
+    }
+
+    &_active {
+      border: 1px solid var(--btn-initial);
+      color: var(--btn-initial);
+
+      &:hover {
+        background: rgba(0,0,0,0);
+      }
+    }
+
+    &_ordinary {
+      cursor: pointer;
+    }
+
+    &_disabled {
+      cursor: default;
+      background: rgba(0,0,0,0);
+
+      &:hover {
+        background: rgba(0,0,0,0);
+      }
+    }
+  }
+}

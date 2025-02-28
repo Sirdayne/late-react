@@ -1,0 +1,12 @@
+# PLEASE USE ~/.gitignore_global OUTSIDE THE PROJECT TO IGNORE YOUR FILES
+# COMMAND: git config --global core.excludesfile ~/.gitignore_global
+
+.idea
+.yarn
+dist
+node_modules
+reports
+package-lock.json
+
+# Log files
+yarn-error.log*

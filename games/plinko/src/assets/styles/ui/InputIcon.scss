@@ -1,0 +1,14 @@
+@use '../typography' as t;
+
+.input-icon {
+  position: relative;
+
+  &-img {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+  }
+}

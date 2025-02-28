@@ -1,0 +1,5 @@
+docker:
+  image:
+    provider: apis
+    name: plinko
+    type: front

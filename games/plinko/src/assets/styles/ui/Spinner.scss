@@ -1,0 +1,27 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  mask: radial-gradient(
+      farthest-side,
+      transparent calc(70% - 1px),
+      #000 calc(70% - 1px)
+  );
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(70% - 1px), #000 calc(70% - 1px));
+  background: conic-gradient(from 0deg, #fff 0%, transparent 80%);
+  animation: spin .7s linear infinite;
+
+  &-container {
+    width: 24px;
+    height: 24px;
+  }
+}

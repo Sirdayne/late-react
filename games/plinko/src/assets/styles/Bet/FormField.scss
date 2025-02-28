@@ -1,0 +1,24 @@
+@use '../typography' as t;
+
+.form-fields {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.form-field {
+  margin-top: 16px;
+  width: 100%;
+
+  &-extra {
+    margin-top: 38px;
+  }
+
+  &-label {
+    margin-bottom: 6px;
+    height: 16px;
+    color: var(--secondary);
+    @include t.m12();
+  }
+}

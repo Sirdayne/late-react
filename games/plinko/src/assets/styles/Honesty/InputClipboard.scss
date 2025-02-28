@@ -1,0 +1,13 @@
+@use '../typography' as t;
+
+.input-clipboard {
+  position: relative;
+
+  &-tooltip {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 12px;
+    right: 12px;
+  }
+}

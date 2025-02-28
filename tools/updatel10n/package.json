@@ -1,0 +1,19 @@
+{
+  "name": "@apis-games-front/updatel10n",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./index.js",
+    "prettier": "npx prettier",
+    "prettier:format": "npm run prettier -- --write \"src/**/*.{js}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@apis-games-front/find-package-path": "^1.0.0",
+    "csv-parser": "^3.0.0"
+  }
+}

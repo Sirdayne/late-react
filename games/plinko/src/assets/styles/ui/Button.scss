@@ -1,0 +1,237 @@
+@use '../typography' as t;
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s linear;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px 32px;
+  border: 1px solid #867DF8;
+  border-radius: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &-content {
+    min-height: 20px;
+  }
+
+  &-normal {
+    background: linear-gradient(180deg, #7970F7 0%, #5C50DD 100%);
+    box-shadow: 0px -5px 17.9px 0px rgba(113, 151, 248, 0.58) inset, 0px 4px 28px 0px rgba(75, 90, 233, 0.55);
+
+    &:hover {
+      background: linear-gradient(180deg, #786FFF 0%, #5C4DF4 100%);
+      border: 1px solid #867DF9;
+      box-shadow: 0px -5px 17.9px 0px rgba(113, 151, 248, 0.58) inset, 0px 4px 28px 0px rgba(74.65, 128.39, 232.69, 0.55);
+
+      .button-gradient-hover {
+        opacity: 1;
+      }
+    }
+
+    &-gradient {
+      opacity: 1;
+      position: absolute;
+      top: 2px;
+      left: 8px;
+      width: calc(100% - 16px);
+      height: 26px;
+      background: linear-gradient(360deg, rgba(121, 112, 247, 0.20) 0%, rgba(121, 112, 247, 0.50) 0%, rgba(121, 112, 247, 0.38) 63%, rgba(121, 112, 247, 0) 100%);
+      box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+      border-radius: 16px;
+      filter: blur(3px);
+      transform: translate3d(0, 0, 0);
+      z-index: 1;
+      transition: .2s linear;
+    }
+
+    &-gradient-hover {
+      position: absolute;
+      opacity: 0;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      height: 38px;
+      background: #5C99EE;
+      box-shadow: 3px 3px 3px;
+      filter: blur(38px);
+      transform: translate3d(0, 0, 0);
+      z-index: 1;
+      transition: .2s linear;
+    }
+
+    &:active {
+      box-shadow: none;
+      background: linear-gradient(180deg, #564AC2 0%, #675DD2 100%);
+      border: 1px solid #6156CE;
+
+      .button-gradient {
+        opacity: 0;
+      }
+
+      .button-gradient-hover {
+        opacity: 0;
+      }
+    }
+
+    &:focus-visible {
+      outline: 1px #9F98FA solid;
+      border: 1px #9F98FA solid;
+      box-shadow: none;
+    }
+
+    &:disabled {
+      border: 1px solid #3C3872;
+      background: linear-gradient(180deg, #363267 0%, #353166 100%);
+      box-shadow: none;
+      color: var(--btn-disabled);
+
+      & .button-content {
+        opacity: 0.5;
+      }
+    }
+
+    & .button-content {
+      position: relative;
+      text-align: center;
+      @include t.m16();
+      color: #fff;
+      z-index: 2;
+    }
+  }
+
+  &-take {
+    background: #191C35;
+    border: 1px solid rgba(117, 124, 254, 0);
+    box-shadow: none;
+
+    .button-content {
+      position: relative;
+      color: #fff;
+      z-index: 2;
+    }
+
+    &-gradient {
+      position: absolute;
+      top: calc(100% - 20px);
+      left: 10px;
+      border-radius: 296px;
+      width: 296px;
+      height: 100px;
+      background: #6D62F6;
+      filter: blur(47px);
+      transform: translate3d(0, 0, 0);
+      z-index: 1;
+    }
+
+    &.button.button-take:hover {
+      background: #191C35;
+      border: 1px solid rgba(117, 124, 254, 0);
+      box-shadow: none;
+
+      & .button-take-gradient {
+        top: calc(100% - 25px);
+      }
+    }
+
+    &.button.button-take:active .button-take-gradient {
+      top: calc(100% + 10px);
+    }
+
+    //&:disabled {
+    //  border: 1px solid rgba(117, 124, 254, 0);
+    //  background: #191C35;
+    //  box-shadow: none;
+    //
+    //  & .button-content {
+    //    color: #D1CEFE;
+    //    opacity: 0.2;
+    //  }
+    //
+    //  & .button-take-gradient {
+    //    opacity: 0;
+    //  }
+    //}
+  }
+
+  &-cancel {
+    background: #262A4E;
+    border: 1px solid rgba(117, 124, 254, 0);
+    box-shadow: none;
+
+    .button-content {
+      position: relative;
+      color: #fff;
+      z-index: 2;
+    }
+
+    &-gradient {
+      position: absolute;
+      top: calc(100% - 15px);
+      left: 10px;
+      border-radius: 296px;
+      width: 296px;
+      height: 100px;
+      opacity: 0.38;
+      background: rgba(255, 62, 62, 0.81);
+      filter: blur(33px);
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.button.button-cancel:hover {
+      border: 1px solid rgba(117, 124, 254, 0);
+      box-shadow: none;
+
+      & .button-cancel-gradient {
+        top: calc(100% - 20px);
+      }
+    }
+
+    &.button.button-cancel:active .button-cancel-gradient {
+      top: calc(100% + 10px);
+    }
+
+    //&:disabled {
+    //  border: 1px solid rgba(117, 124, 254, 0);
+    //  background: #191C35;
+    //  box-shadow: none;
+    //
+    //  & .button-content {
+    //    color: #D1CEFE;
+    //    opacity: 0.2;
+    //  }
+    //
+    //  & .button-cancel-gradient {
+    //    opacity: 0;
+    //  }
+    //}
+  }
+
+  &-loading {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+
+    img {
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+    }
+  }
+}

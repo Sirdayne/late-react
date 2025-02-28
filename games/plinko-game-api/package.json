@@ -1,0 +1,22 @@
+{
+  "name": "@apis-games-front/plinko-game-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "clear": "npx rimraf ./dist",
+    "build": "npx tsc"
+  },
+  "eslintConfig": {
+    "extends": "../../eslint.config.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.2.1",
+    "axios-retry": "^3.8.0",
+    "scheduler-polyfill": "1.0.0"
+  },
+  "keywords": [],
+  "author": "Taras Shevchenko",
+  "license": "MIT"
+}

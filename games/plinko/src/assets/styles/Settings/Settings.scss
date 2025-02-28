@@ -1,0 +1,166 @@
+@use '../typography' as t;
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.settings {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  z-index: 2;
+  overflow-x: auto;
+
+  &-animate {
+    animation: fadeInOut 0.3s ease-in-out;
+  }
+
+  &-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 64px;
+    box-sizing: border-box;
+    padding: 0 16px;
+
+    &-close {
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  &-container {
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  &-title {
+    padding: 0 16px;
+    color: var(--settings);
+    @include t.sb24();
+    box-sizing: border-box;
+    margin-bottom: 24px;
+  }
+
+  &-under {
+    margin: 8px 0;
+    border-radius: 12px;
+    padding: 24px;
+    box-sizing: border-box;
+    background: var(--tertiary);
+
+    &-title {
+      @include t.m18();
+      color: #fff;
+    }
+
+    &-text {
+      margin-top: 12px;
+      @include t.l14();
+      color: var(--settings-under);
+    }
+
+    &-sub {
+      margin-top: 16px;
+      @include t.m16();
+    }
+
+    &-row {
+      margin-top: 9px;
+
+      b {
+        font-weight: bold;
+      }
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 20px;
+      box-sizing: border-box;
+    }
+
+    &-logo {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include t.l14();
+      color: var(--max-bet);
+
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+
+  &-under-game-interface {
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  &-game-interface {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    cursor: default;
+    border-radius: 12px;
+    box-sizing: border-box;
+    transition: .1s linear;
+
+    &:hover {
+      background: #1C1F34;
+    }
+
+    &-text {
+      color: var(--secondary);
+      @include t.l14();
+    }
+  }
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  .settings {
+    width: 360px;
+
+    &-navigation {
+      padding: 8px 16px;
+    }
+
+    &-right {
+      left: unset;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .settings {
+    width: 360px;
+
+    &-navigation {
+      padding: 24px 20px 0;
+    }
+
+    &-right {
+      left: unset;
+      right: 0;
+    }
+  }
+}

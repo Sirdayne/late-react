@@ -1,0 +1,51 @@
+@use '../typography' as t;
+
+.input {
+  position: relative;
+
+  input {
+    width: 100%;
+    height: 48px;
+    border-radius: 12px;
+    border: 2px solid #282C45;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    color: #fff;
+    padding: 12px 44px 12px 12px;
+    box-sizing: border-box;
+    outline: none;
+    @include t.m16();
+
+    &:hover {
+      border: 2px var(--quaternary) solid;
+      background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+    }
+
+    &:focus {
+      border-radius: 12px;
+      border: 2px solid var(--btn-initial);
+      background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    }
+
+    &:disabled {
+      background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+      border: 2px #25273F solid;
+      color: var(--tertiary);
+    }
+  }
+
+  &-invalid {
+    input {
+      border: 2px solid var(--invalid);
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}

@@ -1,0 +1,90 @@
+@use '../typography' as t;
+
+.wallet-form {
+  margin-top: 8px;
+
+  .select {
+    width: 100%;
+  }
+
+  &-row {
+    display: flex;
+  }
+
+  &-row_gap {
+    gap: 8px
+  }
+
+  &-row_margin {
+    margin-top: 12px
+  }
+
+  &-select {
+    height: 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--quinary);
+    width: 100%;
+
+    &-img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &-label {
+      margin-left: 6px;
+      color: var(--settings);
+      @include t.m12();
+      text-align: center;
+    }
+
+    &-value {
+      margin-left: 10px;
+      display: flex;
+      height: 20px;
+      min-width: 20px;
+      border-radius: 2px;
+      justify-content: center;
+      align-items: center;
+      @include t.m12();
+      background: var(--quaternary);
+      color: #fff;
+    }
+  }
+
+  &-input {
+    width: 100%;
+    .input {
+      input {
+        height: 42px;
+        padding: 8px 44px 8px 12px;
+        width: 100%;
+      }
+    }
+  }
+
+  &-volume {
+    .volume-btn {
+      width: 42px;
+      height: 42px;
+
+      .volume-btn-minus-line {
+        top: 19px;
+      }
+
+      .volume-btn-plus-line {
+        top: 19px;
+        left: 13px;
+        width: calc(100% - 26px);
+      }
+
+      .volume-btn-plus-line-vertical {
+        top: 13px;
+        left: 19px;
+        height: calc(100% - 24px);
+      }
+    }
+  }
+}

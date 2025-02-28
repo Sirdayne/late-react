@@ -1,0 +1,146 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  box-sizing: border-box;
+  padding: 2px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &-logo {
+    width: 78px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-back {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    svg {
+      width: 100%;
+      transition: .1s linear;
+      fill: var(--max-bet);
+
+      &:hover {
+        fill: var(--secondary);
+      }
+
+      &:active {
+        fill: var(--quaternary);
+      }
+    }
+
+    &-disabled {
+      svg {
+        fill: var(--tertiary);
+
+        &:hover, &:active {
+          fill: var(--tertiary);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .navigation {
+    top: 0;
+    background: var(--primary);
+    position: sticky;
+    width: 360px;
+    padding: 0 16px;
+    height: 54px;
+
+    &-right {
+      margin-left: calc(100% - 360px);
+    }
+
+    &-logo {
+      width: 78px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 440px) and (orientation: portrait) {
+  .navigation {
+    height: 68px;
+
+    &-logo {
+      width: 96px;
+    }
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1023px) and (orientation: landscape) {
+  .navigation {
+    top: 0;
+    background: var(--primary);
+    position: sticky;
+    width: 360px;
+    padding: 0 24px;
+    height: 68px;
+
+    &-right {
+      margin-left: calc(100% - 360px);
+    }
+
+    &-logo {
+      width: 96px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    width: 360px;
+    height: 68px;
+
+    &-logo {
+      width: 96px;
+    }
+
+    &-right {
+      margin-left: calc(100% - 360px);
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .navigation {
+    padding: 0 24px;
+    height: 80px;
+
+    &-logo {
+      width: 102px;
+    }
+
+    &-right {
+      margin-left: calc(100% - 360px);
+    }
+  }
+}

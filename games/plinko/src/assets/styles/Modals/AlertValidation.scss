@@ -1,0 +1,106 @@
+@use '../typography' as t;
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.alert-validation {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  background: var(--invalid);
+  color: var(--settings);
+  @include t.m12();
+  z-index: 12;
+  border-radius: 0;
+
+  &-text {
+    margin-left: 12px;
+  }
+
+  &-loading {
+    svg {
+      width: 24px;
+      height: 24px;
+      animation: rotate 1s linear infinite;
+    }
+
+    &-overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 50px;
+      background: rgba(19, 22, 41, 0.70);
+      z-index: 11;
+    }
+  }
+
+  svg {
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 440px) and (orientation: portrait) {
+  .alert-validation {
+    top: 60px;
+
+    &-loading-overlay {
+      top: 60px;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  .alert-validation {
+    top: unset;
+    bottom: 16px;
+    right: unset;
+    left: 16px;
+    width: 320px;
+    border-radius: 12px;
+
+    &_right {
+      left: unset;
+      right: 16px;
+    }
+
+    &-loading {
+      &-overlay {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .alert-validation {
+    top: unset;
+    bottom: 16px;
+    right: unset;
+    left: 16px;
+    width: 320px;
+    border-radius: 12px;
+
+    &_right {
+      left: unset;
+      right: 16px;
+    }
+
+    &-loading {
+      &-overlay {
+        top: 0;
+      }
+    }
+  }
+}

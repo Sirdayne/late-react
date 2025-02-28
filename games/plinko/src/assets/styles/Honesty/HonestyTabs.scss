@@ -1,0 +1,25 @@
+@use '../typography' as t;
+
+.honesty-tabs {
+  display: flex;
+  width: 100%;
+}
+
+.honesty-tab {
+  margin-top: 24px;
+  padding: 9px 32px;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(0,0,0,0);
+  color: var(--secondary);
+  box-sizing: border-box;
+  width: 100%;
+  @include t.m14();
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+  &_active {
+    background: var(--max-bet);
+    color: var(--settings);
+  }
+}

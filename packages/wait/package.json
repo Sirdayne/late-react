@@ -1,0 +1,17 @@
+{
+  "name": "@apis-games-front/wait",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "clear": "npx rimraf ./dist",
+    "build": "npx tsc"
+  },
+  "eslintConfig": {
+    "extends": "../../eslint.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

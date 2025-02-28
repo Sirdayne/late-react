@@ -1,0 +1,55 @@
+@use '../typography' as t;
+
+.main-honesty-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary);
+  @include t.m14();
+  margin-top: 18px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  span {
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  .main-honesty-option {
+    width: 384px;
+    padding: 0 16px;
+    position: absolute;
+    bottom: 16px;
+    z-index: 1;
+
+    &-right {
+      margin-left: calc(100% - 384px);
+    }
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .main-honesty-option {
+    width: 360px;
+    position: absolute;
+    bottom: 16px;
+    z-index: 1;
+
+    &-right {
+      margin-left: calc(100% - 370px);
+    }
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .main-honesty-option {
+    position: static;
+  }
+}

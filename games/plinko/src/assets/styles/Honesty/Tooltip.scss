@@ -1,0 +1,55 @@
+@use '../typography' as t;
+
+.tooltip {
+  margin-left: 4px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  position: relative;
+
+  &-arrow {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: 3;
+  }
+
+  &-img {
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-hint {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: var(--settings);
+    box-shadow: 0 4px 4px  rgba(7, 8, 16, 0.20);
+    width: 100%;
+    z-index: 4;
+
+    &-title {
+      color: var(--primary);
+      @include t.m12();
+    }
+
+    &-text {
+      margin-top: 8px;
+      margin-bottom: 12px;
+      color: var(--quaternary);
+      @include t.l12();
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

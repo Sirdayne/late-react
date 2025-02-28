@@ -1,0 +1,83 @@
+@use '../typography' as t;
+
+.max-bet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 2px solid #282C45;
+  background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+  color: var(--max-bet);
+  cursor: pointer;
+  @include t.b12();
+
+  &:active {
+    color: #5E617D;
+    background: linear-gradient(180deg, #171B2E 0%, #131629 100%)!important;
+  }
+
+  &:disabled {
+    border: 2px solid #25273F;
+    color: #25273F;
+    background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+    &:hover {
+      border: 2px solid #25273F;
+      background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+    }
+  }
+
+  .max-bet-img {
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: #4D506C
+    }
+  }
+}
+
+.max-bet-active {
+  border: 2px solid var(--btn-initial);
+  color: var(--btn-initial);
+  background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+
+  &:hover {
+    border: 2px solid #867DF8;
+    background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+    color: #867DF8;
+  }
+
+  &:active {
+    border: 2px solid #564BD5;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%)!important;
+    color: #564BD5;
+  }
+
+  .max-bet-img {
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 100%;
+      height: auto;
+      fill: #564BD5;
+    }
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .max-bet:hover {
+    background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+    border: 2px var(--quaternary) solid;
+  }
+
+  .max-bet-active:hover {
+    border: 2px solid #867DF8;
+    color: #867DF8;
+  }
+}

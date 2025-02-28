@@ -1,0 +1,57 @@
+@use '../typography' as t;
+
+.btn {
+  color: #fff;
+  @include t.m14();
+  border-radius: 16px;
+  border: 1px solid #6D62F6;
+  background: #6D62F6;
+  padding: 15px 22px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  transition: .3s linear;
+  position: relative;
+  min-height: 50px;
+
+  &:hover {
+    border: 1px solid #6256E5;
+    background: #6256E5;
+  }
+
+  &:active {
+    border: 1px solid #4137AE;
+    background: #4137AE;
+    box-shadow: none;
+  }
+
+  &:disabled {
+    border: 1px solid #25273F;
+    background: #25273F;
+    box-shadow: none;
+    color: var(--btn-disabled);
+  }
+
+  &.btn.btn-outline {
+    background: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+  }
+
+  &-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    img {
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+    }
+  }
+}

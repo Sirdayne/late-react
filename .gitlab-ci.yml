@@ -1,0 +1,9 @@
+stages:
+  - validate
+  - quality
+
+include:
+  - project: eyecon/apis/gitlab-ci-templates
+    ref: v1.0.0
+    file:
+      - common.yml

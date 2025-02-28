@@ -1,0 +1,10 @@
+!**/*
+!games/
+!packages/
+!tools/
+!ops/docker/
+!package.json
+!src
+!tsconfig.json
+!vite.config.mts
+!yarn.lock

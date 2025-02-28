@@ -1,0 +1,6 @@
+ignores:
+  - "@stylistic/stylelint-plugin"
+  - depcheck
+  # depcheck does not parse mjs files
+  - stylelint*
+  - yarn-audit-fix

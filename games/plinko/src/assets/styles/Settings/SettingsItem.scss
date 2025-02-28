@@ -1,0 +1,26 @@
+@use '../typography' as t;
+
+.settings-item {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  @include t.m14();
+  box-sizing: border-box;
+  transition: .1s linear;
+  cursor: default;
+  border-radius: 12px;
+
+  &-text {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}

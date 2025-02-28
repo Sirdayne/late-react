@@ -1,0 +1,133 @@
+@use '../typography' as t;
+
+.honesty-seed {
+  margin-top: 12px;
+  background: #1C1F34;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &-info {
+    padding: 6px 20px 20px;
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 12px;
+    border-radius: 8px;
+
+    img {
+      margin-left: 4px;
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  &-row-calc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+
+  &-item {
+    @include t.m12();
+    color: var(--settings);
+  }
+
+  &-clipboard {
+    @include t.m12();
+    color: var(--settings);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-truncate {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-text {
+    @include t.m12();
+    color: var(--secondary);
+  }
+
+  &-hint {
+    @include t.m12();
+    color: #5E617D;
+  }
+
+  &-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+
+    &-title {
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    &-container {
+      min-width: 340px;
+
+      &_margin-bottom {
+        margin-bottom: 12px;
+      }
+    }
+
+    &-table {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &-cell {
+    color: var(--settings-under);
+    @include t.l12();
+    min-width: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+  }
+
+  &-first {
+    width: 20px;
+  }
+
+  &-second {
+    width: 40%;
+  }
+
+  &-third {
+    width: 40%;
+  }
+}
+
+.honesty-seed-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.honesty-button-change-seed {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.honesty-seeds-form {
+  input:disabled {
+    color: #fff
+  }
+}

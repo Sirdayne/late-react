@@ -1,0 +1,14 @@
+{
+  "name": "@apis-games-front/find-package-path",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "prettier": "npx prettier",
+    "prettier:format": "npm run prettier -- --write 'src/**/*.{js}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

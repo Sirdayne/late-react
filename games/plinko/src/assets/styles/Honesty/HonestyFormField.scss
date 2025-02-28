@@ -1,0 +1,51 @@
+@use '../typography' as t;
+
+.honesty-form-field {
+  margin-top: 20px;
+
+  &-label {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    @include t.m12();
+    color: var(--secondary);
+  }
+
+  &-required {
+    color: var(--invalid);
+    @include t.m12();
+  }
+
+  &-tooltip {
+    margin-left: 4px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-content {
+    margin-top: 6px;
+  }
+
+  &-full {
+    width: 100%;
+  }
+
+  &_volume {
+    padding-top: 19px;
+    margin-left: 12px;
+  }
+}
+
+.honesty-form-fields {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

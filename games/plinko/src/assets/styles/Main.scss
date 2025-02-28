@@ -1,0 +1,25 @@
+@use 'typography' as t;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-width: 320px;
+  width: 100%;
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  .main {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    height: 100svh;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .main {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+}

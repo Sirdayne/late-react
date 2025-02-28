@@ -1,0 +1,17 @@
+{
+  "name": "@apis-games-front/smart-container",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "clear": "npx rimraf ./dist",
+    "build": "npx tsc "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@apis-games-front/use-resize": "^1.0.0"
+  }
+}

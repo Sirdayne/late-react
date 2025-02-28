@@ -1,0 +1,81 @@
+@use '../typography' as t;
+
+.volume {
+  display: flex;
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #282C45;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+
+    &-minus {
+      border-radius: 12px 0 0 12px;
+      border-right: 1px solid #282C45;
+      width: 46px;
+
+      &-line {
+        position: absolute;
+        top: 21px;
+        left: 15px;
+        height: 2px;
+        width: calc(100% - 29px);
+        background: var(--secondary);
+        border-radius: 2px;
+      }
+    }
+
+    &-plus {
+      border-radius: 0 12px 12px 0;
+      border-left: 1px solid #282C45;
+
+      &-line {
+        position: absolute;
+        top: 21px;
+        left: 16px;
+        height: 2px;
+        width: calc(100% - 31px);
+        background: var(--secondary);
+        border-radius: 2px;
+      }
+
+      &-line-vertical {
+        position: absolute;
+        top: 15px;
+        left: 22px;
+        height: calc(100% - 30px);
+        width: 2px;
+        background: var(--secondary);
+        border-radius: 2px;
+      }
+    }
+
+    &:hover {
+      background: linear-gradient(180deg, #25273F 0%, #21233A 100%);
+      border-color: var(--quaternary);
+    }
+
+    &:active {
+      border-color: #21233A;
+      background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+    }
+
+    &:disabled {
+      border-color: #25273F;
+      background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+      &:hover {
+        background: linear-gradient(180deg, #171B2E 0%, #131629 100%);
+      }
+
+      .volume-btn-minus-line, .volume-btn-plus-line, .volume-btn-plus-line-vertical {
+        background: var(--tertiary);
+      }
+    }
+  }
+}

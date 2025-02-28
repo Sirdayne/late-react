@@ -1,0 +1,139 @@
+@use '../typography' as t;
+
+.about-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  z-index: 2;
+  overflow-x: auto;
+  box-sizing: border-box;
+
+  &-container {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  &-container-close {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &-title {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    color: var(--settings);
+    @include t.sb24();
+    box-sizing: border-box;
+  }
+
+  &-separator {
+    margin: 8px 16px;
+    height: 1px;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+    background: var(--tertiary);
+  }
+
+  &-under {
+    margin: 8px 0;
+    border-radius: 12px;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    background: var(--tertiary);
+
+    &-title {
+      margin-top: 24px;
+      @include t.m14();
+      color: #fff;
+
+      &_margin-0 {
+        margin: 0;
+      }
+    }
+
+    &-text {
+      @include t.l14();
+      color: var(--settings-under);
+    }
+
+    &-row {
+      margin-top: 12px;
+      @include t.l14();
+      color: var(--settings-under);
+
+      span {
+        color: #F3F3F8
+      }
+
+      &_margin_bottom {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-img {
+      margin-top: 12px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      box-sizing: border-box;
+    }
+
+    &-logo {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include t.l14();
+      color: var(--max-bet);
+
+      img {
+        height: 24px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) and (orientation: landscape) {
+  .about-game {
+    width: 360px;
+
+    &-right {
+      left: unset;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .about-game {
+    width: 360px;
+
+    &-right {
+      left: unset;
+      right: 0;
+    }
+  }
+}

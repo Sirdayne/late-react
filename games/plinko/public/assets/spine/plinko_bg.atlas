@@ -1,0 +1,290 @@
+Plinko_BG.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG_Mask/Plinko_BG_Mask_00000
+  rotate: false
+  xy: 0, 1685
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00001
+  rotate: false
+  xy: 344, 1685
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00002
+  rotate: false
+  xy: 688, 1685
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00003
+  rotate: false
+  xy: 1032, 1685
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00004
+  rotate: false
+  xy: 1376, 1685
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00005
+  rotate: false
+  xy: 0, 1348
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00006
+  rotate: false
+  xy: 344, 1348
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00007
+  rotate: false
+  xy: 688, 1348
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00008
+  rotate: false
+  xy: 1032, 1348
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00009
+  rotate: false
+  xy: 1376, 1348
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00010
+  rotate: false
+  xy: 0, 1011
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00011
+  rotate: false
+  xy: 344, 1011
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00012
+  rotate: false
+  xy: 688, 1011
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00013
+  rotate: false
+  xy: 1032, 1011
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00014
+  rotate: false
+  xy: 1376, 1011
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00015
+  rotate: false
+  xy: 0, 674
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00016
+  rotate: false
+  xy: 344, 674
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00017
+  rotate: false
+  xy: 688, 674
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00018
+  rotate: false
+  xy: 1032, 674
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00019
+  rotate: false
+  xy: 1376, 674
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00020
+  rotate: false
+  xy: 0, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00021
+  rotate: false
+  xy: 344, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00022
+  rotate: false
+  xy: 688, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00023
+  rotate: false
+  xy: 1032, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00024
+  rotate: false
+  xy: 1376, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00025
+  rotate: false
+  xy: 0, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00026
+  rotate: false
+  xy: 344, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00027
+  rotate: false
+  xy: 688, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00028
+  rotate: false
+  xy: 1032, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00029
+  rotate: false
+  xy: 1376, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+
+Plinko_BG2.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG_Mask/Plinko_BG_Mask_00030
+  rotate: false
+  xy: 0, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00031
+  rotate: false
+  xy: 344, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00032
+  rotate: false
+  xy: 688, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00033
+  rotate: false
+  xy: 1032, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00034
+  rotate: false
+  xy: 1376, 337
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00035
+  rotate: false
+  xy: 0, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00036
+  rotate: false
+  xy: 344, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+BG_Mask/Plinko_BG_Mask_00037
+  rotate: false
+  xy: 688, 0
+  size: 344, 337
+  orig: 344, 338
+  offset: 0, 1
+  index: -1
+
+Plinko_BG3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Game Field Square
+  rotate: false
+  xy: 0, 0
+  size: 2048, 2012
+  orig: 2048, 2012
+  offset: 0, 0
+  index: -1

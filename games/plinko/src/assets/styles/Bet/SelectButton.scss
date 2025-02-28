@@ -1,0 +1,96 @@
+@use '../typography' as t;
+
+.select-button {
+  height: 32px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--quinary);
+  width: 100%;
+  box-sizing: border-box;
+
+  &-container {
+    position: relative;
+    width: 100%;
+  }
+
+  &-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &-label {
+    margin-left: 6px;
+    color: #fff;
+    @include t.m12();
+    text-align: center;
+  }
+
+  &-value {
+    margin-left: 12px;
+    display: flex;
+    height: 20px;
+    min-width: 24px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    @include t.m14();
+    background: var(--quaternary);
+    color: #fff;
+  }
+
+  &-active {
+    border: 2px solid #6D62F6;
+  }
+
+  &-list {
+    position: absolute;
+    width: 100%;
+    max-height: 160px;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 2px solid #6D62F6;
+    background: linear-gradient(180deg, #1C1F34 0%, #171B2E 100%);
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+    overflow-y: auto;
+    z-index: 3;
+
+    &_bottom {
+      bottom: calc(100% - 10px);
+    }
+  }
+
+  &-item {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 8px;
+    @include t.m14();
+
+    &:hover {
+      background: #25273F;
+    }
+
+    &-active, &-active:hover {
+      background: var(--quaternary);
+    }
+  }
+
+  &-disabled {
+    background: #171B2E;
+
+    .select-button-label {
+      color: #393C59;
+    }
+
+    .select-button-value {
+      color: #393C59;
+      background: #25273F;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* html {
+  touch-action: none;
+} */
+body,
+canvas,
+div {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+:root {
+  --vh: 1vh;
+}
+html {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  height: -webkit-fill-available;
+}
+body {
+  /* overflow: hidden; */
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  /* https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
+  /*https://dev.to/maciejtrzcinski/100vh-problem-with-ios-safari-3ge9*/
+  background-color: #131629;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+canvas {
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+}

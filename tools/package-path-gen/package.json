@@ -1,0 +1,19 @@
+{
+  "name": "@apis-games-front/plinko-package-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "cross-env ID=12 BALLS=500 node ./index.js",
+    "prettier": "npx prettier",
+    "prettier:format": "npm run prettier -- --write 'src/**/*.{js}'"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "matter-js": "^0.19.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@apis-games-front/use-assets",
+  "version": "1.0.2",
+  "description": "",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "clear": "npx rimraf ./dist",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async-wait-until": "^2.0.12",
+    "fontfaceobserver": "^2.3.0",
+    "use-asset": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/fontfaceobserver": "^2.1.0",
+    "react": "^18.2.0"
+  }
+}
